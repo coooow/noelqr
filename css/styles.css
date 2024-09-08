@@ -1,0 +1,17 @@
+#lvl1{
+    margin: 0 30px;
+}
+
+#lvl2{
+    margin: 0 auto;
+}
+
+#cont1, #cont2, #cont3{
+    display: flex;
+    justify-content: center;
+}
+
+h1, h2{
+    text-align: center;
+    padding-top: 5%;
+}
