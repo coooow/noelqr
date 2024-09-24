@@ -14,7 +14,7 @@ function btnPress(type){
 function enviar(){
     const contra = document.getElementById('contrassenya').value;
 
-    if (verifyPassword(actualType, contra)){
+    if (verifyPassword(typeActual, contra)){
 
     } else {
         closeWindow();
