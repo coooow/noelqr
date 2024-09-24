@@ -22,24 +22,24 @@
             <!-- <img src="..." class="card-img-top" alt="..."> -->
             <div class="card-body">
                 <h5 class="card-title">#1</h5>
-                <p class="card-text">GOOOOOOOOOOOOOOOO</p>
-                <a href="#" class="btn btn-primary">Veure pista</a>
+                <p class="card-text">Si has trobat aquesta pista, fes-li clic al botó i introdueix-la</p>
+                <a href="#" class="btn btn-primary" onclick="btnPress(1)">Veure pista</a>
             </div>
         </div>
         <div class="card text-bg-warning" style="width: 18rem;" id="lvl1">
             <!-- <img src="..." class="card-img-top" alt="..."> -->
             <div class="card-body">
                 <h5 class="card-title">#2</h5>
-                <p class="card-text">GOOOOOOOOOOOOOOOO</p>
-                <a href="#" class="btn btn-primary">Veure pista</a>
+                <p class="card-text">Si has trobat aquesta pista, fes-li clic al botó i introdueix-la</p>
+                <a href="#" onclick="btnPress(2)" class="btn btn-primary">Veure pista</a>
             </div>
         </div>
         <div class="card text-bg-warning" style="width: 18rem;" id="lvl1">
             <!-- <img src="..." class="card-img-top" alt="..."> -->
             <div class="card-body">
                 <h5 class="card-title">#3</h5>
-                <p class="card-text">GOOOOOOOOOOOOOOOO</p>
-                <a href="#" class="btn btn-primary">Veure pista</a>
+                <p class="card-text">Si has trobat aquesta pista, fes-li clic al botó i introdueix-la</p>
+                <a href="#" onclick="btnPress(3)" class="btn btn-primary">Veure pista</a>
             </div>
         </div>
     </div>
@@ -49,24 +49,24 @@
             <!-- <img src="..." class="card-img-top" alt="..."> -->
             <div class="card-body">
                 <h5 class="card-title">#4</h5>
-                <p class="card-text">GOOOOOOOOOOOOOOOO</p>
-                <a href="#" class="btn btn-primary">Veure pista</a>
+                <p class="card-text">Si has trobat aquesta pista, fes-li clic al botó i introdueix-la</p>
+                <a href="#" onclick="btnPress(4)" class="btn btn-primary">Veure pista</a>
             </div>
         </div>
         <div class="card text-bg-warning" style="width: 18rem;" id="lvl1">
             <!-- <img src="..." class="card-img-top" alt="..."> -->
             <div class="card-body">
                 <h5 class="card-title">#5</h5>
-                <p class="card-text">GOOOOOOOOOOOOOOOO</p>
-                <a href="#" class="btn btn-primary">Veure pista</a>
+                <p class="card-text">Si has trobat aquesta pista, fes-li clic al botó i introdueix-la</p>
+                <a href="#" onclick="btnPress(5)" class="btn btn-primary">Veure pista</a>
             </div>
         </div>
         <div class="card text-bg-warning" style="width: 18rem;" id="lvl1">
             <!-- <img src="..." class="card-img-top" alt="..."> -->
             <div class="card-body">
                 <h5 class="card-title">#6</h5>
-                <p class="card-text">GOOOOOOOOOOOOOOOO</p>
-                <a href="#" class="btn btn-primary">Veure pista</a>
+                <p class="card-text">Si has trobat aquesta pista, fes-li clic al botó i introdueix-la</p>
+                <a href="#" onclick="btnPress(6)" class="btn btn-primary">Veure pista</a>
             </div>
         </div>
     </div>
@@ -76,24 +76,24 @@
             <!-- <img src="..." class="card-img-top" alt="..."> -->
             <div class="card-body">
                 <h5 class="card-title">#7</h5>
-                <p class="card-text">GOOOOOOOOOOOOOOOO</p>
-                <a href="#" class="btn btn-primary">Veure pista</a>
+                <p class="card-text">Si has trobat aquesta pista, fes-li clic al botó i introdueix-la</p>
+                <a href="#" onclick="btnPress(7)" class="btn btn-primary">Veure pista</a>
             </div>
         </div>
         <div class="card text-bg-warning" style="width: 18rem;" id="lvl1">
             <!-- <img src="..." class="card-img-top" alt="..."> -->
             <div class="card-body">
                 <h5 class="card-title">#8</h5>
-                <p class="card-text">GOOOOOOOOOOOOOOOO</p>
-                <a href="#" class="btn btn-primary">Veure pista</a>
+                <p class="card-text">Si has trobat aquesta pista, fes-li clic al botó i introdueix-la</p>
+                <a href="#" onclick="btnPress(8)" class="btn btn-primary">Veure pista</a>
             </div>
         </div>
         <div class="card text-bg-warning" style="width: 18rem;" id="lvl1">
             <!-- <img src="..." class="card-img-top" alt="..."> -->
             <div class="card-body">
                 <h5 class="card-title">#9</h5>
-                <p class="card-text">GOOOOOOOOOOOOOOOO</p>
-                <a href="#" class="btn btn-primary">Veure pista</a>
+                <p class="card-text">Si has trobat aquesta pista, fes-li clic al botó i introdueix-la</p>
+                <a href="#" onclick="btnPress(9)" class="btn btn-primary">Veure pista</a>
             </div>
         </div>
     </div>
@@ -104,9 +104,25 @@
             <div class="card-body">
                 <h5 class="card-title">Final</h5>
                 <p class="card-text">Si creus que tens la resposta del puzzle, proba-la</p>
-                <a href="#" class="btn btn-primary">Completar Puzzle</a>
+                <a href="#" onclick="btnPress(10)" class="btn btn-primary">Completar Puzzle</a>
             </div>
         </div>
+    </div>
+    <div id="overlay"></div>
+    <div id="popup">
+        <h3>Test</h3>
+        <h5>Introdueix-hi la contrassenya</h5>
+        <input type="text" id="contrassenya" name="password" required>
+        <br>
+        <a href="#" onclick="enviar()" class="btn btn-primary" id="btnEnviar">Enviar</a>
+        <br>
+        <a href="#" onclick="closeWindow()" class="btn btn-outline-secondary" id="btnTancar">Tancar</a>
+    </div>
+    <div id="popupError">
+        <h3>Error</h3>
+        <h5>Contrassenya incorrecte. Torna a provar un altre cop</h5>
+        <br>
+        <a href="#" onclick="closeWindow()" class="btn btn-outline-secondary" id="btnTancar">Tancar</a>
     </div>
 </body>
 
